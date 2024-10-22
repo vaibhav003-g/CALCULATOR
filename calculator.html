@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><title>CALCULATOR</title><h1 align="center">WELCOME TO THE WORLD OF NUMBERS!!</h1>
+<script>
+    function calc()
+    {
+var a=document.getElementById("txt1").value;
+var b=document.getElementById("txt2").value;
+var c=document.getElementById("txt3").value; 
+var d=document.getElementById("txt4").value;
+var e=document.getElementById("txt5").value;
+var f=document.getElementById("txt6").value;
+var g=document.getElementById("txt7").value; 
+
+var h=parseInt(a);
+var i=parseInt(b);
+
+var j=h+i;
+var k=document.getElementById("txt3");
+k.value=j;
+
+var l=i-h;
+var m=document.getElementById("txt4");
+m.value=l;
+
+var n=h*i;
+var o=document.getElementById("txt5");
+o.value=n;
+
+var p=h/i;
+var q=document.getElementById("txt6");
+q.value=p;
+
+var r=h%i;
+var s=document.getElementById("txt7");
+s.value=r;
+    }
+</script></head>
+
+<body style="background-color: blueviolet;color:whitesmoke;border:7px solid black;padding-left:500px;padding-right: 500px;padding-bottom: 100px;padding-top: 100px;">
+ 
+    <table width="100%">
+<tr><th colspan="4" align="center"><marquee direction="left">CALCULATOR</marquee></th></tr>        
+<tr><td width="50%" align="center">FIRST NUMBER:</td><td width="50%" align="center"><input type="text" placeholder="ENTER FIRST NUMBER" cols="36" id="txt1"></td></tr>        
+<tr><td width="50%" align="center">SECOND NUMBER:</td><td width="50%" align="center"><input type="text" placeholder="ENTER SECOND NUMBER" cols="36" id="txt2"></td></tr>        
+<TR><td colspan="4" align="center"><input type="button" value="CALCULATE" onclick="calc()"></td></TR>
+<tr><td width="50%" align="center">SUM:</td><td width="50%" align="center"><input type="text" placeholder="SUM" COLS="36" id="txt3"></td></tr>
+<tr><td width="50%" align="center">DIFFERENCE:</td><td width="50%" align="center"><input type="text" placeholder="DIFFERENCE" COLS="36" id="txt4"></td></tr>
+<tr><td width="50%" align="center">PRODUCT:</td><td width="50%" align="center"><input type="text" placeholder="PRODUCT" COLS="36" id="txt5"></td></tr>
+<tr><td width="50%" align="center">DIVISION:</td><td width="50%" align="center"><input type="text" placeholder="DIVISION" COLS="36" id="txt6"></td></tr>
+<tr><td width="50%" align="center">DIVISION(MOD):</td><td width="50%" align="center"><input type="text" placeholder="DIVISION(MOD)" COLS="36" id="txt7"></td></tr>
+
+
+
+    </table>
+</body></html>
